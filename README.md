@@ -23,3 +23,12 @@
 - Target, Advice, PointCut을 연결해 Proxy를 생성하는 재사용 가능한 FactoryBean을 추가
 
 <hr />
+
+
+## 3단계 - Transaction AOP 구현
+### 요구사항 - DB 트랜잭션 처리
+- 메소드에 @Transactional 애노테이션을 추가하면 Transaction 처리가 가능하도록 구현
+- Exception 발생 시, 롤백 처리
+- 각 Thread별로 Connection을 유지하기 위해, ThreadLocal 사용
+
+<hr />
