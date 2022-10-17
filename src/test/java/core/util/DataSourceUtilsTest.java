@@ -28,7 +28,7 @@ public class DataSourceUtilsTest {
 		BasicDataSource newDs = new BasicDataSource();
 		newDs.setDriverClassName("org.h2.Driver");
 		newDs.setUrl("jdbc:h2:mem://localhost/~/jwp-aop;MODE=MySQL;DB_CLOSE_DELAY=-1");
-		newDs.setUsername("sa");
+		newDs.setUsername("sa2");
 		newDs.setPassword("");
 		return DataSourceUtils.getConnection(newDs);
 	}
